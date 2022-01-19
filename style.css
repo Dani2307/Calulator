@@ -1,0 +1,74 @@
+    * {
+        margin: 0vh;
+        padding: 0vh;
+    }
+    body, html {
+        width: 100%;
+        height: 100%;
+    }
+    .background {
+        background-image: linear-gradient(45deg,black, purple);
+        height: 100%;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: right;
+        /* alinhamento de elementos filhos no centro da tela abaixo
+        usar apenas quando o background não contem informação 
+        display: flex;
+        justify-content: center;
+        align-items: center; */
+        }
+    .calculadora {
+        position: absolute;
+        background-color:rgba(0,0,0,.8);
+        text-align: center; /* alinha o texto no centro*/
+        border-radius:15px; /* deixa as bordas arredondadas*/
+        padding: 15px;  /* margem dos elementos*/
+        /* centraliza os elementos dessa div na tela abaixo:*/
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .botao {
+        width: 50px;
+        height: 50px;
+        font-size: 25px;
+        cursor: pointer;
+        background-color: rgb(31,31,31);
+        color: white;
+        border: none;
+        margin: 3px;
+    }
+    .botao:hover {
+        background-color:purple;
+    }
+    .botaozero {
+        width: 106px;
+        height: 50px;
+        font-size: 25px;
+        cursor: pointer;
+        background-color: rgb(31,31,31);
+        color: white;
+        border: none;
+        margin: 3px;
+    }
+    .botaoigual {
+        height: 106px;
+        width: 50px;
+        font-size: 25px;
+        cursor: pointer;
+        background-color: rgb(31,31,31);
+        color: white;
+        border: none;
+        margin: 3px;
+    }
+    #resultado {
+        background-color: white;
+        width: 207px;
+        height: 30px;
+        margin: 5px;
+        font-size: 25px;
+        color: black;
+        text-align: right;
+        padding: 5px;
+            }
